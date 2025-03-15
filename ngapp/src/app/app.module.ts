@@ -6,16 +6,24 @@ import { RouterOutlet } from "@angular/router";
 import { CommonModule } from "@angular/common";
 import { AppRoutingModule } from "./app-routing.module";
 import { CommonBrowserModule } from "./common-browser.module";
+import { MaterialModule } from "./material.module";
+import { TopStripComponent } from "./top-strip/top-strip.component";
+import { PortfolioDetailComponent } from "./portfolio-detail/portfolio-detail.component";
+import { CommonAngularModule } from "./common-angular.module";
 
 @NgModule({
     imports: [
         AppRoutingModule,
-        CommonBrowserModule
+        CommonBrowserModule,
+        MaterialModule,
+        CommonAngularModule
     ],
     declarations: [
         AppComponent,
         HeaderComponent,
-        FooterComponent
+        FooterComponent,
+        TopStripComponent,
+        PortfolioDetailComponent
     ],
     providers: [
     ],
