@@ -1,0 +1,17 @@
+<div id="portfolioHeader"
+  class="app-topstrip text-white p-y-10 p-x-20 w-100 d-lg-flex align-items-center justify-content-between">
+  <h2 class="d-flex align-items-center justify-content-center flex-wrap">
+    <a href="https://facebook.com/NgQuTrung0512" class="owner-img">
+      <img src="/assets/images/pics/Trung Nguyen.png" />
+    </a>
+    <p class="text-white d-none d-lg-flex f-s-14">Nguyễn Quang Trung / Java Software Developer</p>
+  </h2>
+
+
+  <div class="d-flex align-items-center justify-content-center flex-wrap">
+    @for(item of navItems; track item) {
+        <portfolio-header-nav-item [item]="item">
+        </portfolio-header-nav-item>
+    }
+  </div>
+</div>

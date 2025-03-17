@@ -1,0 +1,19 @@
+#portfolioHeader {
+  max-height: 65px;
+  background-color: #414145;
+
+    .owner-img {
+        width: 150px;  /* Adjust as needed */
+        height: auto;
+        overflow: hidden;  /* Hide cropped parts */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .owner-img img {
+        width: 100%;   /* Stretch width to cover */
+        height: 100%;
+        object-fit: cover;  /* Crop instead of stretch */
+      }
+}
