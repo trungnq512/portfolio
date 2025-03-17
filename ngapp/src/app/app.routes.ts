@@ -5,13 +5,24 @@ import { AppComponent } from './app.component';
 export const routes: Routes = [
     {
         path: '',
-        component: AppComponent
+        children: [
+            {
+                path: '',
+                redirectTo: '/home',
+                pathMatch: 'full',
+              },
+              {
+                path: 'home',
+                loadChildren: () =>
+                  import('./portfolio-detail/portfolio-detail.routes').then((m) => m.PortfolioDetailRoutes),
+              }
+        ]
     }
 ];
 
 @NgModule({
     exports: [RouterModule],
-    imports: [RouterModule.forRoot(routes, { useHash: true })],
+    imports: [RouterModule.forChild(routes)],
     declarations: [],
     providers: [
     ]

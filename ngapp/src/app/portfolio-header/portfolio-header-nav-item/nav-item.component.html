@@ -1,0 +1,19 @@
+<button class="d-flex align-items-center gap-4 text-white m-x-10" mat-button
+        [matMenuTriggerFor]="beforeMenu">
+        <div class="d-flex align-items-center gap-6">
+          <i-tabler name="{{ item.iconName }}" class="icon-20 d-flex"></i-tabler>
+          {{ item.displayName }}
+          @if(item.children) {
+            <i-tabler name="chevron-down" class="icon-20 d-flex"></i-tabler>
+          }
+        </div>
+      </button>
+      <mat-menu #beforeMenu="matMenu" xPosition="before">
+        @for(child of item.children; track child) {
+        <a mat-menu-item href="/">
+          <div class="d-flex align-items-center gap-4">
+            {{ child.displayName }}
+          </div>
+        </a>
+      }
+      </mat-menu>
