@@ -1,2 +1,70 @@
-<app-top-strip></app-top-strip>
-<app-header></app-header>
+<div id="portfolioHeader" class="app-topstrip text-white p-y-10 p-x-20 w-100 d-lg-flex align-items-center justify-content-between">
+    <h2 class="d-flex align-items-center justify-content-center flex-wrap">
+      <a href="https://facebook.com/NgQuTrung0512" class="owner-img">
+          <img src="/assets/images/pics/Trung Nguyen.png"/>
+      </a>
+      <p class="text-white d-none d-lg-flex f-s-14">Nguyễn Quang Trung / Java Software Developer</p>
+    </h2>
+  
+    <div class="d-flex align-items-center justify-content-center flex-wrap">
+      <!-- Home -->
+      <a mat-button class="text-white d-none d-lg-flex" href="/">
+        <div class="d-flex align-items-center gap-4">
+          <i-tabler name="home" class="icon-20 d-flex"></i-tabler>
+          Home
+        </div>
+      </a>
+  
+      <!-- Resume -->
+      <a mat-button class="text-white d-none d-lg-flex" href="/">
+        <div class="d-flex align-items-center gap-4">
+          <i-tabler name="file-cv" class="icon-20 d-flex"></i-tabler>
+          Resume
+        </div>
+      </a>
+  
+      <!-- Projects -->
+      <a mat-button class="text-white d-none d-lg-flex" href="/">
+        <div class="d-flex align-items-center gap-4">
+          <i-tabler name="brand-github" class="icon-20 d-flex"></i-tabler>
+          Projects
+        </div>
+      </a>
+  
+      <!-- Contact -->
+      <a mat-button class="text-white d-none d-lg-flex" href="/">
+        <div class="d-flex align-items-center gap-4">
+          <i-tabler name="brand-line" class="icon-20 d-flex"></i-tabler>
+          Contact Me!
+        </div>
+      </a>
+  
+      <!-- Language -->
+      <button class="d-flex align-items-center gap-4 text-white m-x-10" mat-button
+        [matMenuTriggerFor]="beforeMenu">
+        <div class="d-flex align-items-center gap-6">
+          <i-tabler name="language" class="icon-20 d-flex"></i-tabler>
+          Language
+          <i-tabler name="chevron-down" class="icon-20 d-flex"></i-tabler>
+        </div>
+      </button>
+      <mat-menu #beforeMenu="matMenu" xPosition="before">
+        <a mat-menu-item href="/">
+          <div class="d-flex align-items-center gap-4">
+            English
+          </div>
+        </a>
+        <a mat-menu-item href="/">
+          <div class="d-flex align-items-center gap-4">
+            Vietnamese
+          </div>
+        </a>
+        <a mat-menu-item href="/">
+          <div class="d-flex align-items-center gap-4">
+            German
+          </div>
+        </a>
+      </mat-menu>
+    </div>
+  </div>
+  
