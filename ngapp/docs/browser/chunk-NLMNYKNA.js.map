@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/portfolio-detail/portfolio-detail.routes.ts"],
+  "sourcesContent": ["import { NgModule } from \"@angular/core\";\nimport { RouterModule } from \"@angular/router\";\nimport { routes } from \"../app.routes\";\n\n@NgModule({\n    exports: [RouterModule],\n    imports: [RouterModule.forRoot(routes, { useHash: true })],\n    declarations: [],\n    providers: [\n    ]\n})\nexport class PortfolioDetailRoutes { }"],
+  "mappings": ";;;;;;;;AAWM,IAAO,wBAAP,MAAO,uBAAqB;;qCAArB,wBAAqB;EAAA;wEAArB,uBAAqB,CAAA;4EALpB,aAAa,QAAQ,QAAQ,EAAE,SAAS,KAAI,CAAE,GAD9C,YAAY,EAAA,CAAA;;",
+  "names": []
+}
