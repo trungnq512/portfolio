@@ -1,27 +1,25 @@
 import { NavItem } from "./portfolio-header-nav-item/nav-item";
 
-const path = 'portfolio';
-
 export const navItems: NavItem[] = [
     {
       displayName: 'Home',
       iconName: 'Home',
-      route: path + '/home'
+      route: './home'
     },
     {
         displayName: 'Resume',
         iconName: 'file-cv',
-        route: path + '/resume'
+        route: './resume'
     },
     {
         displayName: 'Projects',
         iconName: 'brand-github',
-        route: path + '/projects'
+        route: './projects'
     },
     {
         displayName: 'Contact Me',
         iconName: 'brand-line',
-        route: path + '/contact'
+        route: './contact'
     },
     {
         displayName: 'Language',

@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "docs",
-            "baseHref": "/trungnq512/",
+            "baseHref": "/portfolio/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [

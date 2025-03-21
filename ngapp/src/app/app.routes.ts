@@ -7,14 +7,9 @@ import { AppComponent } from './app.component';
 export const routes: Routes = [
     {
         path: '',
-        redirectTo: '/portfolio',
-        pathMatch: 'full'
-    },
-    {
-        path: '',
         children: [
             {
-                path: 'portfolio',
+                path: '',
                 loadChildren: () =>
                     import('./portfolio-detail/portfolio-detail.routes').then((m) => m.PortfolioDetailRoutes)
 
