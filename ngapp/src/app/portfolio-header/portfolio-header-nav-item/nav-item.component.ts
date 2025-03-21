@@ -19,7 +19,7 @@ export class PortfolioHeaderNavItemComponent {
     
     onItemSelected(item: NavItem) {
       if (!item.children || !item.children.length) {
-        this.router.navigate([item.route]);
+        this.router.navigate(['portfolio/' + item.route]);
       }
     }
 }

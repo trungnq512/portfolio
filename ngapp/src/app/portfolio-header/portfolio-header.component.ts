@@ -16,8 +16,6 @@ import { PortfolioHeaderNavItemComponent } from './portfolio-header-nav-item/nav
     ]
 })
 export class PortfolioHeaderComponent {
-  constructor(public router: Router) {
-    console.log("construct header.")
-  }
+  constructor() {}
   navItems = navItems;
 }
