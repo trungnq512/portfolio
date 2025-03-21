@@ -8,7 +8,7 @@ import { PortfolioDetailComponent } from './portfolio-detail/portfolio-detail.co
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [RouterOutlet, PortfolioHeaderComponent, PortfolioFooterComponent]
+  imports: [PortfolioHeaderComponent, PortfolioFooterComponent, PortfolioDetailComponent]
 })
 export class AppComponent {
   title = 'Portfolio';

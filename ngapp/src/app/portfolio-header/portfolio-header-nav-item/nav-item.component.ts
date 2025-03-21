@@ -13,13 +13,7 @@ import { MaterialModule } from "../../material.module";
 })
   
 export class PortfolioHeaderNavItemComponent {
-    constructor(public router: Router) {};
+    constructor() {};
     @Input() item: NavItem | any;
-    @Input() depth: any;
-    
-    onItemSelected(item: NavItem) {
-      if (!item.children || !item.children.length) {
-        this.router.navigate(['portfolio/' + item.route]);
-      }
-    }
+
 }
